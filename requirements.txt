@@ -4,4 +4,4 @@ numpy
 PyYAML
 streamlit
 
--e .     # To build the local package - .egg-info folder
+-e .
