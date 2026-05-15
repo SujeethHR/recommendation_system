@@ -1,0 +1,24 @@
+artifacts_config:
+  artifacts_dir: artifacts
+
+data_ingestion_config:
+  dataset_download_url: "https://github.com/SujeethHR/my-data_sets/raw/refs/heads/main/dataset.zip"
+  dataset_dir: dataset
+  ingested_dir: ingested_data
+  raw_data_dir: raw_data
+
+data_validation_config:
+  books_csv_file: BX-Books.csv
+  ratings_csv_file: BX-Book-Ratings.csv
+  clean_data_dir: clean_data
+  serialized_objects_dir: serialized_objects
+
+data_transformation_config:
+  transformed_data_dir: transformed_data
+
+model_trainer_config:
+  trained_model_dir: trained_model
+  trained_model_name: model.pkl
+
+recommendation_config:
+  poster_api_url: "https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}"
