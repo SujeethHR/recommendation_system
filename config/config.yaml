@@ -8,10 +8,11 @@ data_ingestion_config:
   raw_data_dir: raw_data
 
 data_validation_config:
-  books_csv_file: BX-Books.csv
-  ratings_csv_file: BX-Book-Ratings.csv
   clean_data_dir: clean_data
   serialized_objects_dir: serialized_objects
+  books_csv_file: BX-Books.csv
+  ratings_csv_file: BX-Book-Ratings.csv
+
 
 data_transformation_config:
   transformed_data_dir: transformed_data
@@ -21,4 +22,4 @@ model_trainer_config:
   trained_model_name: model.pkl
 
 recommendation_config:
-  poster_api_url: "https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}"
+  poster_api_url: https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US
